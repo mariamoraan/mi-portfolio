@@ -1,0 +1,20 @@
+.projects-section{
+    min-height: 55vh;
+}
+.projects-section-info{
+    padding: 40px;
+    background: var(--dark-blue);
+    margin: 24px 0;
+}
+.projects-section-info h1{
+    color: white;
+}
+.projects-container{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+

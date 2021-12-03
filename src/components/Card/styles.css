@@ -1,0 +1,63 @@
+.card{
+    padding: 5px 10px;  
+    height: 280px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    border-radius: 8px;
+    -webkit-box-shadow: 5px 5px 36px 3px rgba(0,0,0,0.39); 
+    box-shadow: 5px 5px 36px 3px rgba(0,0,0,0.39);
+}
+.card img{
+    position: absolute;
+    top: -25%;
+    width: 50%;
+    border-radius: 100%;
+}
+.card .card-info a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color: var(--black);
+}
+.card .card-info a span{
+    transition: 200ms ease-in-out;
+}
+.card .card-info a:hover span{
+    color: var(--blue);
+}
+.card .card-info a .icon{
+    margin-right: 8px;
+}
+.card .card-button{
+    position: absolute;
+    bottom: calc(-30px/2);
+    min-width: calc(250px/2);
+    padding: 5px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--red);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.42); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.42);
+}
+.card .card-button:hover{
+    cursor: pointer;
+}
+
+@media (max-width:900px){
+    .card{
+        padding: 5px 10px;  
+        height: 280px;
+        width: 250px;
+    }
+}
+

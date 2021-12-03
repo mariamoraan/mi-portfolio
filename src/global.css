@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;500&family=Krona+One&family=Lora:wght@400;600&family=Montserrat:wght@400;700&display=swap');
+:root{
+    --red: #EE6055;
+    --light-red: #ff9b85;
+    --coral: #ff7f50;
+    --black: rgb(20, 20, 20);
+    --blue: #A7C8C9;
+    --light-blue: #CDE2E3;
+    --dark-blue: #001122;
+    --twitter-blue: #1DA1F2;
+    --twitter-white: #F5F8FA;
+    --mobile: 900;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+
+}
+.app .content{
+    padding: 16px;
+    padding-top: 8vh;
+}
+h1{
+    font-family: 'Lora', serif;
+    font-size: 1.5em;
+    color: var(--black);
+    margin-bottom: 1em;
+}
+h2{
+    font-family: 'Lora', serif;
+    font-size: 1.2em;
+    color: var(--black);
+    margin-bottom: 0.5em;
+}
+p, a, span, button{
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 1em;
+    color: var(--black);
+    margin-bottom: 0.2em;
+}
