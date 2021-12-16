@@ -1,4 +1,5 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useState} from 'react';
+import { Link } from 'react-router-dom';
 import '../../global.css'
 import "./styles.css"
 import db from "../../../firebase.config";
@@ -6,8 +7,8 @@ import db from "../../../firebase.config";
 import Project from '../../components/Project';
 
 const Projects = () => {
-    const getProject = () =>{
-        db.collection('projects').get().then((s)=>{
+    const getProject = () => {
+        db.collection('projects').limit(3).get().then((s)=>{
             var items = [];
             s.forEach(e=>{
                 console.log(e.id);
@@ -19,7 +20,6 @@ const Projects = () => {
     const [projects, setProjects] = useState([]);
     useEffect(()=>{
         getProject();
-
     },[])
     return(
         <section className="projects-section">
@@ -29,9 +29,15 @@ const Projects = () => {
             <div className="projects-container">
                 {
                     projects.map(project => (
-                        <Project key={project.id} img={project.data.img} name={project.data.name} text={project.data.text} url={project.data.url}/>
+                        <Link key={project.id} to={{pathname:'/project-info/' + project.id}}>
+                            <Project img={project.data.img} name={project.data.name} text={project.data.text} url={project.data.url}/>
+                        </Link>
                     ))
                 }
+            </div>
+            <div className="projects-link">
+                <h1>Puedes ver más proyectos míos aquí</h1>
+                <a href="">Ver todo</a>
             </div>
         </section>
             

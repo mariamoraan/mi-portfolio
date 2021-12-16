@@ -1,0 +1,9 @@
+.icon{
+    margin: 8px;
+    width: 25px;
+    height: 25px;
+    transition: 200ms ease-in-out;
+}
+.icon:hover{
+    filter: brightness(80%);
+}

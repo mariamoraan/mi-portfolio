@@ -1,0 +1,5 @@
+#about{
+    padding-top: 8vh;
+    margin: 0 16px;
+    min-height: calc(100vh - 8vh - 20vh);
+}

@@ -37,6 +37,10 @@
     color: var(--blue);
     text-decoration: none;
 }
+.mobile-menu a.active{
+    color: var(--dark-blue);
+    font-weight: bold;
+}
 .none{
     animation-name:mobile-menu-exit;
     animation-duration: 500ms;

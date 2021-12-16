@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from 'react'
+import { NavLink } from 'react-router-dom'
 import '../../global.css'
 import "./styles.css"
 
-import twitter from '../../assets/twitter.png'
-import github from '../../assets/github.png'
+import TwitterIcon from '../../icons/TwitterIcon'
+import GithubIcon from '../../icons/GithubIcon'
 
 const MobileMenu = ({active, setActive}) => {
     return(
@@ -15,14 +16,14 @@ const MobileMenu = ({active, setActive}) => {
                 close
             </span>
             <ul>
-                <li><a href="#cover">Cover</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Portfolio</a></li>
+                <li><NavLink to={{pathname: ''}}>Home</NavLink></li>
+                <li><NavLink to="/about" >About</NavLink></li>
+                <li><NavLink to="/portfolio">Portfolio</NavLink></li>
                 <li><a href="/">Contact</a></li>
             </ul>
             <div className="social-media">
-                <a href="/"><img src={twitter} alt="Follow me on Twitter"/></a>
-                <a href="/"><img src={github} alt="Look at my Github"/></a>
+                <a href="/"><TwitterIcon /></a>
+                <a href="/"><GithubIcon /></a>
             </div>
         </nav>
     )

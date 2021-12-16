@@ -1,0 +1,35 @@
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 16px;
+    margin: 0;
+    margin-top: 10vh;
+    min-height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--black);
+}
+footer ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style: none;
+}
+footer ul li{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1em;
+}
+footer ul li a{
+    color: white;
+    text-decoration: none;
+    transition: 100ms ease-in-out;
+}
+footer ul li a:hover{
+    cursor: pointer;
+    color: var(--light-blue);
+}

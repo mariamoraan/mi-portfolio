@@ -3,18 +3,45 @@
 }
 .projects-section-info{
     padding: 40px;
-    background: var(--dark-blue);
-    margin: 24px 0;
+    background: var(--blue);
+    margin-bottom: 5vh;
+    text-align: center;
 }
 .projects-section-info h1{
     color: white;
 }
 .projects-container{
-    margin-top: 5vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
+}
+.projects-link{
+    margin: 0 16px;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.projects-link h1{
+    margin-bottom: 1em;
+    text-align: center;
+}
+.projects-link a{
+    padding: 16px 74px;
+    background: var(--blue);
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: 200ms ease-in-out;
+}
+.projects-link a:hover{
+    cursor: pointer;
+    background: var(--dark-blue);
 }
 
 

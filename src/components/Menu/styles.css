@@ -1,6 +1,8 @@
 .menu{
     height: 8vh;
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     top: 0;
     left: 0;
@@ -8,10 +10,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 0;
-    border-bottom: 0.5px solid var(--light-blue);
-    z-index: 101;
+    border-bottom: 1px solid var(--light-blue);
+    z-index: 10000;
     background: white;
-   
 }
 .menu .logo{
     margin: 0;
@@ -38,12 +39,13 @@
     text-decoration: none;
     cursor: pointer;
     margin: 0;
-    padding-bottom: 2vh;
+    padding-bottom: 2.3vh;
     border: none;
-    transition: 250ms ease-in-out;
 }
 .navegation-menu-desktop a:hover{
-    font-weight: 500;
+    border-bottom: 5px solid var(--blue);
+}
+.navegation-menu-desktop a.active{
     border-bottom: 5px solid var(--blue);
 }
 .menu-icon{

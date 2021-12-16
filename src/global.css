@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;500&family=Krona+One&family=Lora:wght@400;600&family=Montserrat:wght@400;700&display=swap');
 :root{
-    --red: #EE6055;
-    --light-red: #ff9b85;
-    --coral: #ff7f50;
-    --black: rgb(20, 20, 20);
-    --blue: #A7C8C9;
-    --light-blue: #CDE2E3;
-    --dark-blue: #001122;
-    --twitter-blue: #1DA1F2;
-    --twitter-white: #F5F8FA;
+    --red: hsl(4, 82%, 63%);
+    --light-red: hsl(11, 100%, 76%);
+    --coral: hsl(16, 100%, 66%);
+    --black: hsl(0, 0%, 8%);
+    --blue: #a6c8c9;
+    --dark-blue: hsl(182, 24%, 62%);
+    --light-blue: hsl(182, 24%, 82%);
     --mobile: 900;
 }
 
@@ -20,10 +18,7 @@
     scroll-behavior: smooth;
 
 }
-.app .content{
-    padding: 16px;
-    padding-top: 8vh;
-}
+
 h1{
     font-family: 'Lora', serif;
     font-size: 1.5em;

@@ -45,8 +45,8 @@
 
 @media (min-width:1200px){
     :root{
-        --project-width: 20vw;
-        --project-content-width: 20vw;
+        --project-width: 25vw;
+        --project-content-width: 25vw;
     }
     .project{
         margin: 8px 24px;

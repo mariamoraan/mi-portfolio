@@ -1,19 +1,25 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import "./global.css"
-import Projects from './containers/Projects'
 import Menu from './components/Menu';
-import Cover from './components/Cover';
-
+import Footer from './components/Footer';
+import Main from './pages/Main.jsx/Main';
+import About from './pages/About/About';
+import Portfolio from './pages/Portfolio/Portfolio';
+import ProjectInfo from './components/ProjectInfo';
 
 const App = () =>{
     return(
-        <div className="app">
+        <BrowserRouter>
             <Menu />
-            <Cover />
-            <div className="content">
-                <Projects />
-            </div>         
-        </div>
+            <Routes>
+                <Route path='/about' element={<About />} />
+                <Route path='/portfolio' element={<Portfolio />} />
+                <Route path='/project-info/:id' element={<ProjectInfo/>} />
+                <Route  path='*' element={<Main/>} />
+            </Routes>
+            <Footer />
+        </BrowserRouter>
     )
 }
 

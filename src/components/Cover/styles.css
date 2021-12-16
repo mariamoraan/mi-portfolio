@@ -15,6 +15,7 @@
     position: relative;
 }
 .cover-left{
+    position: relative;
     padding: 0 5vw;
     display: flex;
     justify-content: center;
@@ -22,34 +23,54 @@
     flex-direction: column;
     text-align: left;
 }
-.cover-right .card
-{
-   position: absolute;
-   top: 0;
-   right: 0;
-   left: 0;
-   bottom: 0;
-   margin: auto;
+.cover-left a{
+    margin-top: 2em;
+    padding: 16px 74px;
+    background: var(--blue);
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: 200ms ease-in-out;
+}
+.cover-left a:hover{
+    cursor: pointer;
+    background: var(--dark-blue);
+}
+.cover-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cover-right a:nth-child(even){
+    transform: translateX(55%);
+}
+.cover-right a:nth-child(odd){
+    transform: translateX(-55%);
 }
 .blob{
+    position: absolute;
+    z-index: -1;
     animation-name: showBlob;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
 }
+.ilustration{
+    width: 20vw;
+    margin-bottom: 16px;
+}
 .blob:nth-child(1){  
-   position: absolute;
-   bottom: -30%;
-   left: -10%;
-   z-index: -1;
-   margin: auto;
+   top: 0vh;
+   right: -10vw;
+   transform: rotate(180deg);
 }
 .blob:nth-child(2){  
-   position: absolute;
-   top: 0;
-   right: 0;
-   z-index: -1;
-   margin: auto;
-   transform: rotateX(180deg);
+    bottom: -15vh;
+    left: -10vh;   
+    transform: rotate(0deg);
 }
 @keyframes showBlob{
     from{
@@ -59,6 +80,8 @@
         opacity: 100%;
     }
 }
+
+
 @media  (max-width:900px) {
     .cover-section{
         height: auto;
@@ -67,20 +90,36 @@
     .cover-left,
     .cover-right{
         padding: 0;
-        min-height: 50vh;
+        min-height: 20vh;
+        margin: 5vh 0;
+        height: auto;
         width: 100%;
     }
     .cover-left p,
     .cover-left h1,
-    .cover-left h2{
+    .cover-left h2,
+    .ilustration{
         margin: 5px 20px;
     }
-    .blob:nth-child(1){
-        display: none;
+    .cover-left a{
+        margin: 2em 20px;
+    }
+    .ilustration{
+        width: 50%;
     }
     .blob:nth-child(2){
-        top: 0;
-        right: 40vw;
+        display: none;
+    }
+    .blob:nth-child(1){
+        top: -5vh; 
+        right: -50vw;
+        transform: rotate(90deg);
+    }
+    .cover-right a:nth-child(even){
+        transform: translateX(0);
+    }
+    .cover-right a:nth-child(odd){
+        transform: translateX(0);
     }
     
 }
