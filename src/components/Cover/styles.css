@@ -60,7 +60,7 @@
 }
 .ilustration{
     width: 20vw;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 }
 .blob:nth-child(1){  
    top: 0vh;
@@ -82,7 +82,7 @@
 }
 
 
-@media  (max-width:900px) {
+@media  (max-width:1000px) {
     .cover-section{
         height: auto;
         flex-direction: column;
@@ -90,8 +90,8 @@
     .cover-left,
     .cover-right{
         padding: 0;
-        min-height: 20vh;
-        margin: 5vh 0;
+        min-height: 0;
+        margin: 0;
         height: auto;
         width: 100%;
     }
@@ -101,10 +101,24 @@
     .ilustration{
         margin: 5px 20px;
     }
+    .cover-left{
+        margin-top: 4vh;
+    }
+    .cover-right{
+        margin-bottom: 4vh;
+    }
+    .cover-section h1{
+        font-size: 4em;
+        margin-bottom: 40px;
+    }
+    .cover-section h2{
+        font-size: 2em;
+    }
     .cover-left a{
-        margin: 2em 20px;
+        margin: 50px 20px;
     }
     .ilustration{
+        display: none;
         width: 50%;
     }
     .blob:nth-child(2){

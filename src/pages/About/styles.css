@@ -1,5 +1,9 @@
 #about{
     padding-top: 8vh;
-    margin: 0 16px;
+    padding-bottom: 3vh;
+    margin: 0 5vw;
     min-height: calc(100vh - 8vh - 20vh);
+}
+#about .text{
+    margin: 10vh 0;
 }

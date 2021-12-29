@@ -8,7 +8,7 @@ import GithubIcon from "../../icons/GithubIcon";
 
 const ProjectInfo = () => {
     const { id } = useParams();
-    const [project, setProject] = useState({name:'', text:'', url:'', img:''})
+    const [project, setProject] = useState({name:'', text:'', url:'', img:'', git:''})
     const getProject = () => {
         db.collection('projects').doc(id).onSnapshot(p => {
             setProject(p.data());
@@ -26,7 +26,7 @@ const ProjectInfo = () => {
                 />
             </div>
             <div className="project-info-text">
-                <a href="project-info-icon" className="project-info-icon" alt="Click to see the code on github"><GithubIcon /></a>
+                <a href={project.git} className="project-info-icon" alt="Click to see the code on github"><GithubIcon /></a>
                 <h1>{project.name}</h1>
                 <p>{project.text}</p>
                 {

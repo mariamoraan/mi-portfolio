@@ -3,6 +3,16 @@
     --project-content-width: 90vw;
 }
 
+.large{
+    --project-width: 90vw;
+}
+.medium{
+    --project-width: 60vw;
+}
+.short{
+    --project-width: 70vw;
+}
+
 .project{
     position: relative;
     height: auto;
@@ -47,6 +57,15 @@
     :root{
         --project-width: 25vw;
         --project-content-width: 25vw;
+    }
+    .large{
+        --project-width: 30vw;
+    }
+    .medium{
+        --project-width: 25vw;
+    }
+    .short{
+        --project-width: 20vw;
     }
     .project{
         margin: 8px 24px;

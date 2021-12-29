@@ -1,0 +1,23 @@
+#contact{
+    padding-top: 8vh;
+    margin: 0 16px;
+    min-height: calc(100vh - 8vh - 20vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact div{
+    margin: 0 5vw;
+}
+#contact .contact-message a{
+    margin-top: 5vh;
+}
+
+@media (max-width: 900px){
+    #contact{
+        flex-direction: column-reverse;
+    }
+    #contact div{
+        margin: 5vh 5vw;
+    }
+}

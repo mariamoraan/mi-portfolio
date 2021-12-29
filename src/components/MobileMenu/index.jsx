@@ -16,14 +16,14 @@ const MobileMenu = ({active, setActive}) => {
                 close
             </span>
             <ul>
-                <li><NavLink to={{pathname: ''}}>Home</NavLink></li>
-                <li><NavLink to="/about" >About</NavLink></li>
-                <li><NavLink to="/portfolio">Portfolio</NavLink></li>
-                <li><a href="/">Contact</a></li>
+                <li onClick={() => {setActive(!active)}}><NavLink to={{pathname: ''}}>Home</NavLink></li>
+                <li onClick={() => {setActive(!active)}}><NavLink to="/about" >About</NavLink></li>
+                <li onClick={() => {setActive(!active)}}><NavLink to="/portfolio">Portfolio</NavLink></li>
+                <li onClick={() => {setActive(!active)}}><NavLink to="/contact">Contact</NavLink></li>
             </ul>
             <div className="social-media">
-                <a href="/"><TwitterIcon /></a>
-                <a href="/"><GithubIcon /></a>
+                <a href="https://twitter.com/_mariamoraan" target="_blank"><TwitterIcon /></a>
+                <a href="https://github.com/mia-moran" target="_blank"><GithubIcon /></a>
             </div>
         </nav>
     )

@@ -31,7 +31,7 @@
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.3.1"
   },
-  "homepage": "https://yourusername.github.io/mi-portfolio",
+  "homepage": "https://mia-moran.github.io/mi-portfolio/",
   "name": "mi-portfolio",
   "version": "1.0.0",
   "main": "firebase.config.js",

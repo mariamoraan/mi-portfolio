@@ -4,9 +4,9 @@
     --light-red: hsl(11, 100%, 76%);
     --coral: hsl(16, 100%, 66%);
     --black: hsl(0, 0%, 8%);
-    --blue: #a6c8c9;
-    --dark-blue: hsl(182, 24%, 62%);
-    --light-blue: hsl(182, 24%, 82%);
+    --blue: hsl(177, 20%, 61%);
+    --dark-blue: hsl(177, 20%, 51%);
+    --light-blue: hsl(177, 20%, 71%);
     --mobile: 900;
 }
 
@@ -36,4 +36,25 @@ p, a, span, button{
     font-size: 1em;
     color: var(--black);
     margin-bottom: 0.2em;
+}
+
+.page{
+  animation-name: openSection;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes openSection {
+    from{
+        transform: scale(0,0,0);
+    }
+    to{
+        transform: scale(1,1,1);
+    }
+}
+
+@media (max-width: 900px) {
+   *{
+       font-family: 20px;
+   }
 }

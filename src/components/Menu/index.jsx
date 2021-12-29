@@ -17,10 +17,10 @@ const Menu = () =>{
                 menu
             </span>
             <ul className="navegation-menu-desktop">
-                <li><NavLink activeClassName="active" to={{pathname: ''}}>Home</NavLink></li>
-                <li><NavLink to="/about" activeClassName="active" >About</NavLink></li>
-                <li><NavLink to="/portfolio" activeClassName="active">Portfolio</NavLink></li>
-                <li><a href="/" activeClassName="active">Contact</a></li>
+                <li><NavLink activeclassname="active" to={{pathname: ''}}>Home</NavLink></li>
+                <li><NavLink to="/about" activeclassname="active" >About</NavLink></li>
+                <li><NavLink to="/portfolio" activeclassname="active">Portfolio</NavLink></li>
+                <li><NavLink to="/contact" activeclassname="active">Contact</NavLink></li>
             </ul>
             <MobileMenu active={isActive} setActive={setIsActive}/>
         </nav>

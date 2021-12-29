@@ -3,3 +3,12 @@
     margin: 0 16px;
     min-height: calc(100vh - 8vh - 20vh);
 }
+
+.portfolio-container{
+    padding: 5vh 5vw;
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

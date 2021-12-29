@@ -1,6 +1,5 @@
 .project-info{
     padding:0;
-    min-height: calc(100vh - 8vh);
     padding-top: 8vh;
     display: flex;
     justify-content: space-around;
@@ -18,11 +17,15 @@
     flex-direction: column;
     text-align: left;
 }
+.project-info-text a:hover{
+    cursor: pointer;
+}
 .project-info-icon{
     margin-bottom: 24px;
 }
 .project-info-images img{
     width: 100%;
+    border-radius: 8px;
 }
 .project-info-url{
     margin-top: 24px;
@@ -43,12 +46,16 @@
 
 @media  (max-width: 900px) {
     .project-info{
+        padding-top:0;
         flex-direction: column;
         min-height: 0;
     }
     .project-info-images{
         height: auto;
         width:auto;
+    }
+    .project-info-images img{
+        border-radius: 0;
     }
     .project-info-text {
         height: auto;

@@ -3,10 +3,10 @@ import '../../global.css'
 import "./styles.css"
 
 
-const Project = ({img, name, text, url}) => {
+const Project = ({img, name, text, url, type='medium'}) => {
     
     return(
-        <div className="project">
+        <div className={"project " + type}>
             <img className="project-main-image" src={img} alt="" />
         </div>
     )

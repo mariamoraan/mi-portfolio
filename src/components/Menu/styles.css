@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0;
-    border-bottom: 1px solid var(--light-blue);
+    border-bottom: 0.5px solid var(--light-blue);
     z-index: 10000;
     background: white;
 }

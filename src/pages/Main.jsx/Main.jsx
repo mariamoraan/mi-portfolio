@@ -4,7 +4,7 @@ import Cover from '../../components/Cover';
 import Projects from '../../containers/Projects';
 const Main = () => {
     return(
-        <div className="app">
+        <div className="app page">
             <Cover />
             <div className="content">
                 <Projects />

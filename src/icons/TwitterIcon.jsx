@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles.css'
 
-const TwitterIcon = ({fillColor="#A7C8C9", width="25px", height="25px"}) =>{
+const TwitterIcon = ({fillColor="var(--blue)", width="25px", height="25px"}) =>{
     return(
         <svg className="icon" enableBackground="new 0 0 56.693 56.693" height={height} id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" 
             width={width} fill={fillColor}>
